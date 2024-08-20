@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f8b500, #ffcf60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+input {
+    width: 100%;
+    padding: 12px 45px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #f08c00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(240, 140, 0, 0.5);
+}
+
+.recover a {
+    color: #f08c00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.recover a:hover {
+    color: #333;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f08c00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d97706;
+}
+
+.or {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    color: #f08c00;
+    padding: 12px;
+    margin: 0 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.icons i:hover {
+    background-color: #f08c00;
+    color: #fff;
+    border-color: #f08c00;
+}
+
+.links {
+    text-align: center;
+}
+
+.links p {
+    font-size: 14px;
+    color: #777;
+}
+
+#signUpButton, #signInButton {
+    background: none;
+    border: none;
+    color: #f08c00;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#signUpButton:hover, #signInButton:hover {
+    color: #333;
+}
+
+.messageDiv {
+    background-color: #f08c00;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

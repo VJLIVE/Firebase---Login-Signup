@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script type="module" src="./homepage.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #f8b500, #ffcf60);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .homepage-container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .homepage-container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .user-info {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .user-info div {
+            margin-bottom: 0.5rem;
+        }
+
+        .user-info span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #f08c00;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #d97706;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="homepage-container">
+        <h1>Welcome Back!</h1>
+        <div class="user-info">
+            <div>First Name: <span id="loggedUserFName"></span></div>
+            <div>Last Name: <span id="loggedUserLName"></span></div>
+            <div>Email: <span id="loggedUserEmail"></span></div>
+        </div>
+        <button id="logout">Logout</button>
+    </div>
+</body>
+</html>
